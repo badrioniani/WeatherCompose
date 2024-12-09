@@ -2,6 +2,7 @@ package com.example.weathercompose.presentation
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -42,7 +43,7 @@ fun WeatherCard(
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(16.dp),
+                    .background(Color(0xFF46BD86)),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(

@@ -72,6 +72,10 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
 
+    implementation(libs.google.gson)
+    implementation(libs.kotlin.reflect)
+
+
     // Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.moshi)
@@ -87,5 +91,6 @@ dependencies {
 
     // Compose ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+
 
 }

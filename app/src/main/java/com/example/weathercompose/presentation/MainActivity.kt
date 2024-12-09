@@ -3,6 +3,7 @@ package com.example.weathercompose.presentation
 import android.Manifest
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.result.ActivityResultLauncher
@@ -22,6 +23,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+import com.example.weathercompose.presentation.navigation.AppNavigation
 import com.example.weathercompose.ui.theme.WeatherComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -44,39 +48,8 @@ class MainActivity : ComponentActivity() {
             Manifest.permission.ACCESS_COARSE_LOCATION,
         ))
         setContent {
-            WeatherComposeTheme {
-                Box(
-                    modifier = Modifier.fillMaxSize()
-                ) {
-                    Column(
-                        modifier = Modifier
-                            .fillMaxSize()
-                            .background(Color(0xFF1B3B5A))
-                    ) {
-                        WeatherCard(
-                            state = viewModel.state,
-                            backgroundColor = Color(0xFF1B3B5A)
-                        )
-                        Spacer(modifier = Modifier.height(16.dp))
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                            WeatherForecast(state = viewModel.state)
-                        }
-                    }
-                    if(viewModel.state.isLoading) {
-                        CircularProgressIndicator(
-                            modifier = Modifier.align(Alignment.Center)
-                        )
-                    }
-                    viewModel.state.error?.let { error ->
-                        Text(
-                            text = error,
-                            color = Color.Red,
-                            textAlign = TextAlign.Center,
-                            modifier = Modifier.align(Alignment.Center)
-                        )
-                    }
-                }
-            }
+            val navController = rememberNavController()
+            AppNavigation(navController,viewModel)
         }
     }
 }

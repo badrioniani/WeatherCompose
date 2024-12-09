@@ -8,111 +8,111 @@ sealed class WeatherType(
     @DrawableRes val iconRes: Int
 ){
     object ClearSky : WeatherType(
-        weatherDesc = "Clear sky",
+        weatherDesc = "სუფთა ცა",
         iconRes = R.drawable.ic_sunny
     )
     object MainlyClear : WeatherType(
-        weatherDesc = "Mainly clear",
+        weatherDesc = "ძირითადად ნათელი",
         iconRes = R.drawable.ic_cloudy
     )
     object PartlyCloudy : WeatherType(
-        weatherDesc = "Partly cloudy",
+        weatherDesc = "ნაწილობრივ მოღრუბლული",
         iconRes = R.drawable.ic_cloudy
     )
     object Overcast : WeatherType(
-        weatherDesc = "Overcast",
+        weatherDesc = "მოღრუბლული",
         iconRes = R.drawable.ic_cloudy
     )
     object Foggy : WeatherType(
-        weatherDesc = "Foggy",
+        weatherDesc = "ნისლიანი",
         iconRes = R.drawable.ic_very_cloudy
     )
     object DepositingRimeFog : WeatherType(
-        weatherDesc = "Depositing rime fog",
+        weatherDesc = "რიმის ნისლის დეპონირება",
         iconRes = R.drawable.ic_very_cloudy
     )
     object LightDrizzle : WeatherType(
-        weatherDesc = "Light drizzle",
+        weatherDesc = "მსუბუქი წვიმა",
         iconRes = R.drawable.ic_rainshower
     )
     object ModerateDrizzle : WeatherType(
-        weatherDesc = "Moderate drizzle",
+        weatherDesc = "ზომიერი წვიმა",
         iconRes = R.drawable.ic_rainshower
     )
     object DenseDrizzle : WeatherType(
-        weatherDesc = "Dense drizzle",
+        weatherDesc = "მკვრივი წვიმა",
         iconRes = R.drawable.ic_rainshower
     )
     object LightFreezingDrizzle : WeatherType(
-        weatherDesc = "Slight freezing drizzle",
+        weatherDesc = "ოდნავ ყინვაგამძლე წვიმა",
         iconRes = R.drawable.ic_snowyrainy
     )
     object DenseFreezingDrizzle : WeatherType(
-        weatherDesc = "Dense freezing drizzle",
+        weatherDesc = "მკვრივი ყინვაგამძლე წვიმა",
         iconRes = R.drawable.ic_snowyrainy
     )
     object SlightRain : WeatherType(
-        weatherDesc = "Slight rain",
+        weatherDesc = "მცირე წვიმა",
         iconRes = R.drawable.ic_rainy
     )
     object ModerateRain : WeatherType(
-        weatherDesc = "Rainy",
+        weatherDesc = "წვიმიანი",
         iconRes = R.drawable.ic_rainy
     )
     object HeavyRain : WeatherType(
-        weatherDesc = "Heavy rain",
+        weatherDesc = "ძლიერი წვიმა",
         iconRes = R.drawable.ic_rainy
     )
     object HeavyFreezingRain: WeatherType(
-        weatherDesc = "Heavy freezing rain",
+        weatherDesc = "ძლიერი ყინვაგამძლე წვიმა",
         iconRes = R.drawable.ic_snowyrainy
     )
     object SlightSnowFall: WeatherType(
-        weatherDesc = "Slight snow fall",
+        weatherDesc = "მცირე თოვლი მოდის",
         iconRes = R.drawable.ic_snowy
     )
     object ModerateSnowFall: WeatherType(
-        weatherDesc = "Moderate snow fall",
+        weatherDesc = "ზომიერი თოვლი მოდის",
         iconRes = R.drawable.ic_heavysnow
     )
     object HeavySnowFall: WeatherType(
-        weatherDesc = "Heavy snow fall",
+        weatherDesc = "ძლიერი თოვლი მოდის",
         iconRes = R.drawable.ic_heavysnow
     )
     object SnowGrains: WeatherType(
-        weatherDesc = "Snow grains",
+        weatherDesc = "თოვლის მარცვლები",
         iconRes = R.drawable.ic_heavysnow
     )
     object SlightRainShowers: WeatherType(
-        weatherDesc = "Slight rain showers",
+        weatherDesc = "მცირე წვიმა",
         iconRes = R.drawable.ic_rainshower
     )
     object ModerateRainShowers: WeatherType(
-        weatherDesc = "Moderate rain showers",
+        weatherDesc = "ზომიერი წვიმა",
         iconRes = R.drawable.ic_rainshower
     )
     object ViolentRainShowers: WeatherType(
-        weatherDesc = "Violent rain showers",
+        weatherDesc = "ძლიერი წვიმა",
         iconRes = R.drawable.ic_rainshower
     )
     object SlightSnowShowers: WeatherType(
-        weatherDesc = "Light snow showers",
+        weatherDesc = "მსუბუქი თოვლი",
         iconRes = R.drawable.ic_snowy
     )
     object HeavySnowShowers: WeatherType(
-        weatherDesc = "Heavy snow showers",
+        weatherDesc = "ძლიერი თოვლი",
         iconRes = R.drawable.ic_snowy
     )
     object ModerateThunderstorm: WeatherType(
-        weatherDesc = "Moderate thunderstorm",
+        weatherDesc = "ზომიერი ჭექა-ქუხილი",
         iconRes = R.drawable.ic_thunder
     )
     object SlightHailThunderstorm: WeatherType(
-        weatherDesc = "Thunderstorm with slight hail",
+        weatherDesc = "ჭექა-ქუხილი მცირე სეტყვასთან ერთად",
         iconRes = R.drawable.ic_rainythunder
     )
     object HeavyHailThunderstorm: WeatherType(
-        weatherDesc = "Thunderstorm with heavy hail",
+        weatherDesc = "ჭექა-ქუხილი ძლიერი სეტყვით",
         iconRes = R.drawable.ic_rainythunder
     )
 
